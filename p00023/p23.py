@@ -34,13 +34,8 @@ def main():
             if num > MAX_NUMBER:
                 break
             sum_list.add(num)
-    
-    num_queue = deque(list(num_list))
-    for num in sum_list:
-        if num in num_queue:
-            num_queue.remove(num)
-
-    result = sum(num_queue)
+            
+    result = sum(set(num_list)-sum_list)
 
     print(result)
 
