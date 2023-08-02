@@ -1,7 +1,7 @@
 from collections import deque
 
 
-MAX_NUMBER = 28123 + 100
+MAX_NUMBER = 28123
 
 
 def main():
@@ -43,7 +43,7 @@ def main():
     result = sum(num_queue)
 
     print(result)
-    
+
 
 if __name__=='__main__':
     main()
